@@ -1,0 +1,47 @@
+Source: RFC 1180
+
+2.1 Basic structure
+
+                     ----------------------------
+                     |    network applications  |
+                     |                          |
+                     |...  \ | /  ..  \ | /  ...|
+                     |     -----      -----     |
+                     |     |TCP|      |UDP|     |
+                     |     -----      -----     |
+                     |         \      /         |
+                     |         --------         |
+                     |         |  IP  |         |
+                     |  -----  -*------         |
+                     |  |ARP|   |               |
+                     |  -----   |               |
+                     |      \   |               |
+                     |      ------              |
+                     |      |ENET|              |
+                     |      ---@--              |
+                     ----------|-----------------
+                               |
+         ----------------------o---------
+             Ethernet Cable
+
+									Figure 1. Basic TCP/IP Network Node
+
+This is the logical structure of the layered protocols inside a computer on an internet. 
+Each computer that can communicate using internet techonology has such a logical structure. 
+It is this logical structure that determines the behavior of the computer on the internet. 
+The boxes represent processing of the data as it passes through the computer, and the lines 
+connecting boxes show the path of data. The horizontal line at the bottom represents the 
+Ethernet cable; the "o" is the transceiver. The "*" is the IP address and the "@" is the
+Ethernet address. Understanding this logical structure is essential to understanding internet 
+technology.
+
+The name of a unit of data that flows through an internet is dependent upon where it exists in
+the protocol stack. In summary:
+	if it is on an Ethernet it is called an Ethernet frame;
+	if it is between the Ethernet driver and the IP module it is called a IP packet;
+	if it is between the IP module and the UDP module it is called a UDP datagram;
+	if it is between the IP module and the TCP module it is called a TCP segment (transport msg);
+  if it is in a network application it is called a application message.
+
+A driver communicates directly with the network interface hardware.
+A module communicates with a driver, with network applications, or with another module.
