@@ -37,10 +37,10 @@ technology.
 
 The name of a unit of data that flows through an internet is dependent upon where it exists in
 the protocol stack. In summary:
-	if it is on an Ethernet it is called an Ethernet frame;
-	if it is between the Ethernet driver and the IP module it is called a IP packet;
-	if it is between the IP module and the UDP module it is called a UDP datagram;
-	if it is between the IP module and the TCP module it is called a TCP segment (transport msg);
+  if it is on an Ethernet it is called an Ethernet frame;
+  if it is between the Ethernet driver and the IP module it is called a IP packet;
+  if it is between the IP module and the UDP module it is called a UDP datagram;
+  if it is between the IP module and the TCP module it is called a TCP segment (transport msg);
   if it is in a network application it is called a application message.
 
 A driver communicates directly with the network interface hardware.
