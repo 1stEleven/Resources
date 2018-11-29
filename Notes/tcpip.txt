@@ -24,7 +24,7 @@ Source: RFC 1180
          ----------------------o---------
              Ethernet Cable
 
-									Figure 1. Basic TCP/IP Network Node
+                  Figure 1. Basic TCP/IP Network Node
 
 This is the logical structure of the layered protocols inside a computer on an internet. 
 Each computer that can communicate using internet techonology has such a logical structure. 
